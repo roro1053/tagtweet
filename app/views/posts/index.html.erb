@@ -1,8 +1,11 @@
+ <%= link_to "ユーザー登録", new_user_registration_path %>
 <div>hello world</div>
 
  <%= link_to "新規投稿", new_post_path %>
 
-<% @posts.each do |post| %>
+<div>
+  <% @posts.each do |post| %>
   <%= post.name %>
   <%= tag.words %>
-<% end %>
+  <% end %>
+</div>
